@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop="15.0dip"
+    android:background="#ffffffff">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="25.0dip"
+        android:layout_marginRight="25.0dip"
+        android:layout_marginTop="20.0dip"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <utils.OpenSansRegularTxt
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/join_us"
+            android:textSize="@dimen/login_welcome_size" />
+
+        <EditText
+            android:id="@id/userName"
+            android:layout_width="280.0dip"
+            android:layout_height="40.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="25.0dip"
+            android:background="@drawable/login_input_back"
+            android:gravity="center"
+            android:hint="Enter your name"
+            android:maxLines="1"
+            android:paddingLeft="5.0dip"
+            android:paddingRight="5.0dip" />
+
+        <EditText
+            android:id="@id/enterPhoneNo"
+            android:layout_width="280.0dip"
+            android:layout_height="40.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="20.0dip"
+            android:background="@drawable/login_input_back"
+            android:gravity="center"
+            android:hint="Enter your phone(ex. 76896574)"
+            android:maxLines="1"
+            android:paddingLeft="5.0dip"
+            android:paddingRight="5.0dip" />
+
+        <EditText
+            android:id="@id/enterEmail"
+            android:layout_width="280.0dip"
+            android:layout_height="40.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="20.0dip"
+            android:background="@drawable/login_input_back"
+            android:gravity="center"
+            android:hint="Enter your Email"
+            android:maxLines="1"
+            android:paddingLeft="5.0dip"
+            android:paddingRight="5.0dip" />
+
+        <ImageView
+            android:id="@id/registrationBtnView"
+            android:layout_width="@dimen/login_btn_width"
+            android:layout_height="@dimen/login_btn_height"
+            android:layout_marginTop="25.0dip"
+            android:background="@drawable/registerbutton"
+            android:contentDescription="dffrgrgsgsgsg" />
+    </LinearLayout>
+</RelativeLayout>

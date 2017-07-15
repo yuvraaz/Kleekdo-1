@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/topController"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/top_controller_size"
+    android:background="@color/colorPrimary">
+
+    <ImageButton
+        android:id="@id/topBarBakImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10.0dip"
+        android:background="@android:color/transparent"
+        android:src="@drawable/backicon" />
+
+    <LinearLayout
+        android:id="@id/userNameHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8.0dip"
+        android:layout_toRightOf="@id/topBarBakImg"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.app.elitesample.utils.OpenSansRegularTxt
+            android:id="@id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ramesh"
+            android:textColor="@android:color/white"
+            android:textSize="17.0sp" />
+
+        <com.app.elitesample.utils.OpenSansLightTxt
+            android:id="@id/userOnLineOrNot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Online"
+            android:textColor="@android:color/white"
+            android:textSize="11.0sp" />
+    </LinearLayout>
+
+    <com.app.elitesample.utils.OpenSansRegularTxt
+        android:id="@id/topBarTitleTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textColor="@android:color/white"
+        android:textSize="18.0sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@id/userChatRightOption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5.0dip"
+        android:layout_toLeftOf="@id/userMenuBtn"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageButton
+            android:id="@id/userGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10.0dip"
+            android:background="@android:color/transparent"
+            android:src="@drawable/group" />
+
+        <ImageButton
+            android:id="@id/userVideoCall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10.0dip"
+            android:background="@android:color/transparent"
+            android:src="@drawable/videocall" />
+
+        <ImageButton
+            android:id="@id/userPhoneCall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/actioncall" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@id/editUserProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8.0dip"
+        android:layout_toLeftOf="@id/userMenuBtn"
+        android:background="@android:color/transparent"
+        android:src="@drawable/editicon"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@id/userMenuBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5.0dip"
+        android:background="@android:color/transparent"
+        android:src="@drawable/menudots" />
+</RelativeLayout>

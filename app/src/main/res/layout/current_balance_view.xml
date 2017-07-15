@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginRight="20.0dip"
+        android:layout_marginTop="10.0dip"
+        android:orientation="vertical"
+        android:paddingBottom="2.0dip">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/contact_status_below_block__single_row_size"
+            android:paddingLeft="5.0dip"
+            android:paddingRight="5.0dip"
+            android:weightSum="2.0">
+
+            <com.app.elitesample.utils.OpenSansLightTxt
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center|left"
+                android:text="Choose Card"
+                android:textSize="18.0sp" />
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center">
+
+                <Spinner
+                    android:id="@id/visaCardId"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/contact_status_below_block__single_row_size"
+            android:orientation="horizontal"
+            android:weightSum="2.0">
+
+            <RelativeLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.6"
+                android:background="@drawable/current_balance"
+                android:paddingLeft="5.0dip"
+                android:paddingRight="5.0dip">
+
+                <com.app.elitesample.utils.OpenSansRegularTxt
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="Current balance"
+                    android:textColor="@android:color/black"
+                    android:textSize="18.0sp" />
+
+                <com.app.elitesample.utils.OpenSansRegularTxt
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="50 USD"
+                    android:textColor="@android:color/black"
+                    android:textSize="22.0sp" />
+            </RelativeLayout>
+
+            <ImageButton
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.4"
+                android:background="@android:color/transparent"
+                android:src="@drawable/addfunds" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="4.0dip"
+        android:background="#ffe6e6e6" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@id/currentBalanceHistory"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginRight="5.0dip" />
+</LinearLayout>
